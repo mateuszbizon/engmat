@@ -7,7 +7,7 @@
 @theme inline {
   --color-background-light: var(--background-light);
   --color-background: var(--background);
-  --color-background-dark: var(--backgdark-light);
+  --color-background-dark: var(--background-dark);
   --color-background-light2: var(--background-light2);
   --color-background2: var(--background2);
   --color-background-dark2: var(--background-dark2);
