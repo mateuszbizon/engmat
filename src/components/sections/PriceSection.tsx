@@ -5,7 +5,7 @@ function PriceSection() {
   return (
     <section className='py-section-padding bg-background-light2'>
         <Container>
-            <h2 className='heading2 heading-margin-bottom text-center'>Przyzowite ceny</h2>
+            <h2 className='heading2 heading-margin-bottom text-center'>Formy współpracy i cennik</h2>
             <div className='grid md:grid-cols-2 gap-x-5 gap-y-10 text-center'>
                 <div className='p-10 rounded-3xl bg-border2 space-y-5 shadow-2xl'>
                     <p className='bigger-text'>Grupowe</p>
