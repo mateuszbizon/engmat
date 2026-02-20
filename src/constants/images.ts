@@ -9,3 +9,8 @@ export const OFFICE_BG: Image = {
     src: "/office_bg.png",
     alt: "Biuro. Po środku jest korytarz. Z lewej strony krzesła, a z prawej wyjście"
 }
+
+export const EKIPA: Image = {
+    src: "/ekipa.jpg",
+    alt: "Cały zespół EngMat. Na środku logo firmy"
+}

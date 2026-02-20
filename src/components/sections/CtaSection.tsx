@@ -1,0 +1,32 @@
+import React from 'react'
+import { Button } from '../ui/button'
+import Link from 'next/link'
+import Image from 'next/image'
+import { EKIPA, OFFICE_BG } from '@/constants/images'
+
+function CtaSection() {
+  return (
+    <section>
+        <div className='grid lg:grid-cols-2'>
+            <div style={{ backgroundImage: `url(${OFFICE_BG.src})` }} className='p-10 flex flex-col justify-end space-y-8 z-0 bg-cover bg-center bg-no-repeat text-white lg:min-h-150'>
+                <h2 className='heading2'>Popraw oceny i poczuj się lepiej</h2>
+                <p className='little-bigger-text'>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis fugiat tempore doloremque nisi, mollitia facere assumenda porro nobis dolores. Praesentium temporibus ad facilis consequatur omnis, hic odio tenetur deleniti consequuntur?
+                </p>
+                <div>
+                    <Button asChild>
+                        <Link href={"/"}>
+                            Zapisz się na korepetycje
+                        </Link>
+                    </Button>
+                </div>
+            </div>
+            <figure className='relative bg-black w-full aspect-video lg:aspect-auto'>
+                <Image src={EKIPA.src} alt={EKIPA.alt} fill className='object-contain' />
+            </figure>
+        </div>
+    </section>
+  )
+}
+
+export default CtaSection
