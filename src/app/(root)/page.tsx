@@ -1,4 +1,5 @@
 import CtaSection from "@/components/sections/CtaSection";
+import FaqSection from "@/components/sections/FaqSection";
 import Hero from "@/components/sections/Hero";
 import MapSection from "@/components/sections/MapSection";
 import NumbersSection from "@/components/sections/NumbersSection";
@@ -17,6 +18,7 @@ export default function Home() {
         <PriceSection />
         <CtaSection />
         <ReviewsSection />
+        <FaqSection />
         <MapSection />
     </>
   );
