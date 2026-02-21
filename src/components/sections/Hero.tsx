@@ -8,7 +8,7 @@ import Shadow from '../ui/shadow'
 
 function Hero() {
   return (
-    <header style={{ backgroundImage: `url(${OFFICE_BG.src})` }} className='relative py-section-padding lg:h-screen lg:py-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed text-white'>
+    <section style={{ backgroundImage: `url(${OFFICE_BG.src})` }} className='relative py-section-padding lg:h-screen lg:py-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed text-white'>
         <Shadow className='bg-transparent' />
         <Container>
             <div className='flex flex-col justify-center text-center h-full space-y-8 lg:text-left lg:max-w-200'>
@@ -36,7 +36,7 @@ function Hero() {
                 </div>
             </div>
         </Container>
-    </header>
+    </section>
   )
 }
 
