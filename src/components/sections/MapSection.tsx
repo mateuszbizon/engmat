@@ -4,7 +4,7 @@ import { MapPin } from 'lucide-react'
 
 function MapSection() {
   return (
-    <section className='py-section-padding'>
+    <section className='pt-section-padding'>
         <Container>
             <h2 className='heading2 heading-margin-bottom text-center'>Nasze miejsca pracy</h2>
             <div className='grid lg:grid-cols-2 gap-x-5 gap-y-10 mb-10'>
