@@ -14,3 +14,8 @@ export const EKIPA: Image = {
     src: "/ekipa.jpg",
     alt: "Cały zespół EngMat. Na środku logo firmy"
 }
+
+export const LOGO: Image = {
+    src: "/logo.png",
+    alt: "Logo firmy EngMat"
+}
