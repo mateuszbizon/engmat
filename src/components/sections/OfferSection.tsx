@@ -10,7 +10,7 @@ function OfferSection() {
             <div className='heading-margin-bottom grid lg:grid-cols-2 gap-10'>
                 <h2 className='heading2 text-center lg:text-left'>Korepetycje i wiedza na najwyższym poziomie</h2>
                 <p className='little-bigger-text text-center lg:text-right'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita suscipit sit nemo voluptatem quisquam, atque modi consequatur.
+                    EngMat powstało z potrzeby stworzenia miejsca, w którym edukacja ma strukturę, kierunek i realny efekt. To nie są pojedyncze lekcje. To system pracy.
                 </p>
             </div>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10'>
