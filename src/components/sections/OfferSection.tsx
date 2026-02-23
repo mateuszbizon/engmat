@@ -14,12 +14,14 @@ function OfferSection() {
                 </p>
             </div>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10'>
-                <div className='p-10 rounded-3xl space-y-5 bg-background shadow-xl hover:shadow-2xl hover:-translate-y-3 transition duration-300'>
+                <div className='p-10 rounded-3xl space-y-5 bg-background shadow-xl hover:shadow-2xl hover:-translate-y-3 transition duration-300 flex flex-col'>
                     <h3 className='heading3'>Matematyka</h3>
-                    <p className='little-bigger-text'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem? Assumenda accusamus debitis optio blanditiis inventore, est impedit sequi asperiores at aliquam, modi nobis dolorum quia doloremque fugiat cumque quibusdam!
-                    </p>
-                    <div>
+                    <ul className='little-bigger-text font-medium space-y-3'>
+                        <li>Zajęcia indywidualne</li>
+                        <li>Zajęcia grupowe</li>
+                        <li>Przygotowanie do egzaminów</li>
+                    </ul>
+                    <div className='mt-auto'>
                         <Button variant={"link"} size={"link"} asChild>
                             <Link href={"/"}>
                                 Czytaj więcej {">>"}
@@ -27,12 +29,13 @@ function OfferSection() {
                         </Button>
                     </div>
                 </div>
-                <div className='p-10 rounded-3xl space-y-5 bg-background-dark shadow-xl hover:shadow-2xl hover:-translate-y-3 transition duration-300'>
-                    <h3 className='heading3'>Matematyka</h3>
-                    <p className='little-bigger-text'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem? Assumenda accusamus debitis optio blanditiis inventore, est impedit sequi asperiores at aliquam, modi nobis dolorum quia doloremque fugiat cumque quibusdam!
-                    </p>
-                    <div>
+                <div className='p-10 rounded-3xl space-y-5 bg-background shadow-xl hover:shadow-2xl hover:-translate-y-3 transition duration-300 flex flex-col'>
+                    <h3 className='heading3'>Chemia</h3>
+                    <ul className='little-bigger-text font-medium space-y-3'>
+                        <li>Zajęcia indywidualne</li>
+                        <li>Przygotowanie do egzaminów</li>
+                    </ul>
+                    <div className='mt-auto'>
                         <Button variant={"link"} size={"link"} asChild>
                             <Link href={"/"}>
                                 Czytaj więcej {">>"}
@@ -40,12 +43,14 @@ function OfferSection() {
                         </Button>
                     </div>
                 </div>
-                <div className='p-10 rounded-3xl space-y-5 bg-background shadow-xl hover:shadow-2xl hover:-translate-y-3 transition duration-300'>
-                    <h3 className='heading3'>Matematyka</h3>
-                    <p className='little-bigger-text'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptatem? Assumenda accusamus debitis optio blanditiis inventore, est impedit sequi asperiores at aliquam, modi nobis dolorum quia doloremque fugiat cumque quibusdam!
-                    </p>
-                    <div>
+                <div className='p-10 rounded-3xl space-y-5 bg-background shadow-xl hover:shadow-2xl hover:-translate-y-3 transition duration-300 flex flex-col'>
+                    <h3 className='heading3'>Język polski</h3>
+                    <ul className='little-bigger-text font-medium space-y-3'>
+                        <li>Zajęcia indywidualne</li>
+                        <li>Zajęcia grupowe</li>
+                        <li>Przygotowanie do egzaminów</li>
+                    </ul>
+                    <div className='mt-auto'>
                         <Button variant={"link"} size={"link"} asChild>
                             <Link href={"/"}>
                                 Czytaj więcej {">>"}
