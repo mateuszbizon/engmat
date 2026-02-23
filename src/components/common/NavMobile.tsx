@@ -46,7 +46,7 @@ function NavMobile() {
                 </ul>
             </nav>
             <Button asChild>
-                <Link href={`tel:${PHONE_NUMBER}`}>
+                <Link href={`/kontakt`}>
                     Zapsuję się
                 </Link>
             </Button>

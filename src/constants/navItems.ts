@@ -26,4 +26,9 @@ export const NAV_ITEMS: NavItem[] = [
         isLink: true,
         href: "/galeria"
     },
+    {
+        label: "Kontakt",
+        isLink: true,
+        href: "/kontakt"
+    },
 ]

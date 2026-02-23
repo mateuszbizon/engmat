@@ -9,13 +9,13 @@ function CtaSection() {
     <section>
         <div className='grid lg:grid-cols-2'>
             <div style={{ backgroundImage: `url(${OFFICE_BG.src})` }} className='p-10 flex flex-col justify-end space-y-8 z-0 bg-cover bg-center bg-no-repeat text-white lg:min-h-150'>
-                <h2 className='heading2'>Popraw oceny i poczuj się lepiej</h2>
+                <h2 className='heading2'>Dołącz do EngMat</h2>
                 <p className='little-bigger-text'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis fugiat tempore doloremque nisi, mollitia facere assumenda porro nobis dolores. Praesentium temporibus ad facilis consequatur omnis, hic odio tenetur deleniti consequuntur?
+                    Gotowi na rozpoczęcie przygody w EngMat? Zadzwoń lub napisz. Ustalimy najlepszą formę zajęć.
                 </p>
                 <div>
-                    <Button asChild>
-                        <Link href={"/"}>
+                    <Button className='text-foreground' asChild>
+                        <Link href={"/kontakt"}>
                             Zapisz się na korepetycje
                         </Link>
                     </Button>

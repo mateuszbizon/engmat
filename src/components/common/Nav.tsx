@@ -40,7 +40,7 @@ function Nav() {
                 </nav>
                 <div className='hidden lg:block'>
                     <Button asChild>
-                        <Link href={`tel:${PHONE_NUMBER}`}>
+                        <Link href={`/kontakt`}>
                             Zapisuję się
                         </Link>
                     </Button>
