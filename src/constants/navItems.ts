@@ -12,6 +12,11 @@ export const NAV_ITEMS: NavItem[] = [
         href: "/oferta"
     },
     {
+        label: "Cennik",
+        isLink: true,
+        href: "/cennik"
+    },
+    {
         label: "Opinie",
         isLink: true,
         href: "/opinie"

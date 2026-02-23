@@ -5,7 +5,7 @@ type ContainerProps = ComponentProps<"div">
 
 function Container({ children, className, ...props }: ContainerProps) {
   return (
-    <div className={cn("size-full max-w-300 mx-auto px-5", className)} {...props}>
+    <div className={cn("size-full max-w-325 mx-auto px-5", className)} {...props}>
         {children}
     </div>
   )
