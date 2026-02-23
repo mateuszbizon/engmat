@@ -13,15 +13,17 @@ function Hero() {
         <Container>
             <div className='flex flex-col justify-center text-center h-full space-y-8 lg:text-left lg:max-w-200'>
                 <h1 className='heading1'>Centrum Edukacyjne <br /> <span className='bg-primary p-2 rounded-lg text-foreground block w-fit mt-2 mx-auto lg:mx-0'>EngMat</span></h1>
-                <p className='bigger-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit totam obcaecati repellat esse cum qui. Recusandae debitis officia tenetur praesentium molestias veniam dolore, quo provident impedit repellendus amet quia eligendi!</p>
+                <p className='bigger-text'>
+                    Edukacja z kierunkiem dla dzieci, młodzieży i dorosłych. Zajęcia on-line oraz stacjonarne. Zajęcia indywidualne oraz grupowe.
+                </p>
                 <div className='flex justify-center lg:justify-start flex-wrap gap-5'>
-                    <Button asChild>
-                        <Link href="/">
+                    <Button className='text-foreground' asChild>
+                        <Link href="/oferta">
                             Sprawdź ofertę
                         </Link>
                     </Button>
                     <Button variant={"outline"} asChild>
-                        <Link href="/">
+                        <Link href="/opinie">
                             Opinie
                         </Link>
                     </Button>
