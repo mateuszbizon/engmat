@@ -16,7 +16,7 @@ function CtaSection() {
                 <div>
                     <Button className='text-foreground' asChild>
                         <Link href={"/kontakt"}>
-                            Zapisz się na korepetycje
+                            Zapisz się na zajęcia
                         </Link>
                     </Button>
                 </div>

@@ -19,3 +19,8 @@ export const LOGO: Image = {
     src: "/logo.png",
     alt: "Logo firmy EngMat"
 }
+
+export const ENGMAT_OWNER: Image = {
+    src: "/engmat_owner.jpg",
+    alt: "Właścicielka firmy EngMat - Pani Magda. Obok po prawej stronie napis poznajmy się"
+}
