@@ -14,7 +14,7 @@ function Hero() {
             <div className='flex flex-col justify-center text-center h-full space-y-8 lg:text-left lg:max-w-200'>
                 <h1 className='heading1'>Centrum Edukacyjne <br /> <span className='bg-primary p-2 rounded-lg text-foreground block w-fit mt-2 mx-auto lg:mx-0'>EngMat</span></h1>
                 <p className='bigger-text'>
-                    Edukacja z kierunkiem dla dzieci, młodzieży i dorosłych. Zajęcia on-line oraz stacjonarne. Zajęcia indywidualne oraz grupowe.
+                    Korepetycje i kursy w Zgorzelcu dla dzieci, młodzieży i dorosłych. Zajęcia stacjonarne oraz online, indywidualne i grupowe. Skuteczne wsparcie w nauce, zajęcia kreatywne oraz rozwój kompetencji przyszłości – w tym nauka układania kostki Rubika.
                 </p>
                 <div className='flex justify-center lg:justify-start flex-wrap gap-5'>
                     <Button className='text-foreground' asChild>
