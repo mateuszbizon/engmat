@@ -30,3 +30,9 @@ export type Question = {
     question: string
     answer: string
 }
+
+export type Offer = {
+    title: string
+    link: string
+    list: string[]
+}
