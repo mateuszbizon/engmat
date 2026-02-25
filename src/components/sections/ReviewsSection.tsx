@@ -35,10 +35,15 @@ function ReviewsSection() {
                 <CarouselPrevious variant={"default"} className='hidden lg:inline-flex' />
                 <CarouselNext variant={"default"} className='hidden lg:inline-flex' />
             </Carousel>
-            <div className='flex justify-center'>
+            <div className='flex justify-center flex-wrap gap-5'>
                 <Button size={"lg"} asChild>
                     <Link href={"https://www.facebook.com/profile.php?id=61559289707603&sk=reviews"} target='_blank'>
-                        Wszystkie opinie
+                        Opinie z facebooka
+                    </Link>
+                </Button>
+                <Button size={"lg"} asChild>
+                    <Link href={"https://www.google.com/search?client=firefox-b-d&hs=EYkU&sca_esv=aa86132b60f0534c&sxsrf=ANbL-n79Sihn-SGozXpkhk9twaljTVId5w:1772019006589&q=Centrum+Edukacyjne+EngMat&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOf0OGC7cfMx1kl8VdO9ysJ3T-iNVzrSKdw5cN1jX5RmkRLQYk0j2vu_awBr7CpeiHSkojgE%3D&uds=ALYpb_kgbr9WnQ7cqOGSWrVQwMIXLJVrIGtSNmHiKJ7T3ZkrV7MDvUJeCQM-deDsr8-SrcJeeem_OpaN92ZAnw7e0n_ZA7IRZVu7YlCipyB8HtNRb6nw_h77EZ_DwN4x9G5A7zIgPwaA&sa=X&ved=2ahUKEwiw8LCbxfSSAxWSIRAIHXR-AioQ3PALegQIGxAE&biw=1536&bih=739&dpr=1.25"} target='_blank'>
+                        Opinie z google
                     </Link>
                 </Button>
             </div>
