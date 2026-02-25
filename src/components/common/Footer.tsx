@@ -21,7 +21,7 @@ function Footer() {
                     </figure>
                     <p className='md:text-lg'>
                         <em>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nihil quod ratione tempore quidem laudantium mollitia omnis porro non ad corrupti numquam explicabo labore at reprehenderit, praesentium quae consectetur facilis!
+                            Korepetycje i kursy w Zgorzelcu dla dzieci, młodzieży i dorosłych. Zajęcia stacjonarne oraz online, indywidualne i grupowe. Skuteczne wsparcie w nauce, zajęcia kreatywne oraz rozwój kompetencji przyszłości – w tym nauka układania kostki Rubika.
                         </em>
                     </p>
                 </div>
