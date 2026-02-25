@@ -24,3 +24,9 @@ export type NavItem = {
     menu: NavLink[];
     href?: string;
 })
+
+export type Question = {
+    value: string
+    question: string
+    answer: string
+}

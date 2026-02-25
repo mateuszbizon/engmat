@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from '../ui/container'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion'
+import { QUESTIONS } from '@/constants/questions'
 
 function FaqSection() {
   return (
@@ -10,27 +11,17 @@ function FaqSection() {
             <Accordion
                 type="single"
                 collapsible
-                defaultValue="shipping"
+                defaultValue={QUESTIONS[0].value}
                 className="max-w-xl mx-auto"
             >
-                <AccordionItem value="shipping">
-                    <AccordionTrigger>Dlaczego ceny są takiego drogie?</AccordionTrigger>
-                    <AccordionContent>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut magni quibusdam deleniti facilis nam harum commodi possimus? Reiciendis earum, consequuntur, placeat obcaecati eligendi voluptatem laborum, consectetur libero fuga dolorum facilis.
-                    </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="returns">
-                    <AccordionTrigger>Dlaczego ceny są takiego drogie?</AccordionTrigger>
-                    <AccordionContent>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut magni quibusdam deleniti facilis nam harum commodi possimus? Reiciendis earum, consequuntur, placeat obcaecati eligendi voluptatem laborum, consectetur libero fuga dolorum facilis.
-                    </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="support">
-                    <AccordionTrigger>Dlaczego ceny są takiego drogie?</AccordionTrigger>
-                    <AccordionContent>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut magni quibusdam deleniti facilis nam harum commodi possimus? Reiciendis earum, consequuntur, placeat obcaecati eligendi voluptatem laborum, consectetur libero fuga dolorum facilis.
-                    </AccordionContent>
-                </AccordionItem>
+                {QUESTIONS.map(item => (
+                    <AccordionItem key={item.value} value={item.value}>
+                        <AccordionTrigger>{item.question}</AccordionTrigger>
+                        <AccordionContent>
+                            {item.answer}
+                        </AccordionContent>
+                    </AccordionItem>
+                ))}
             </Accordion>
         </Container>
     </section>
