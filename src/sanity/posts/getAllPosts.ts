@@ -15,7 +15,7 @@ export async function getAllPosts() {
             message: ""
         }
     } catch (error) {
-        console.error("Błąd podczas pobierania wszystkich postów")
+        console.error("Błąd podczas pobierania wszystkich postów", error)
         
         return {
             posts: [],
