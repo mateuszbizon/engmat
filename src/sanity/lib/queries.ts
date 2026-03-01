@@ -11,3 +11,9 @@ export const GET_BLOG_BY_SLUG_QUERY = defineQuery(`
         _id, publishedAt, title, slug, categories[]->, mainImage, body
     }  
 `)
+
+export const GET_BLOGS_BY_CATEGORY_SLUG_QUERY = defineQuery(`
+    *[_type == "post" && count(categories[@->slug.current == $categorySlug]) > 0] | order(publishedAt desc) {
+        _id, publishedAt, title, slug, categories[]->, mainImage
+    }
+`)

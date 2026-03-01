@@ -1,10 +1,12 @@
 import EmptyMessage from '@/components/messages/EmptyMessage'
 import ErrorMessage from '@/components/messages/ErrorMessage'
+import { Button } from '@/components/ui/button'
 import Container from '@/components/ui/container'
 import { urlFor } from '@/sanity/lib/image'
 import { getPostBySlug } from '@/sanity/posts/getPostBySlug'
 import { PortableText } from 'next-sanity'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 type Props = {
@@ -41,7 +43,11 @@ async function SingleBlogPage({ params }: Props) {
                         <p className='little-bigger-text font-medium text-center lg:text-left'>Kategorie</p>
                         <div className='flex flex-wrap gap-5'>
                             {post.categories?.map(item => (
-                                <span key={item._id}>{item.title}</span>
+                                <Button variant={"link"} size={"link"} className='text-foreground hover:text-primary' key={item._id} asChild>
+                                    <Link href={`/blog/kategoria/${item.slug?.current}`}>
+                                        {item.title}
+                                    </Link>
+                                </Button>
                             ))}
                         </div>
                     </div>
