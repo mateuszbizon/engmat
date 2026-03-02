@@ -3,8 +3,12 @@ import BlogCard from '../cards/BlogCard'
 import { getAllPosts } from '@/sanity/posts/getAllPosts'
 import ErrorMessage from '../messages/ErrorMessage'
 
-async function AllBlogs() {
-    const { posts, success, message } = await getAllPosts()
+type Props = {
+    sort: "asc" | "desc"
+}
+
+async function AllBlogs({ sort }: Props) {
+    const { posts, success, message } = await getAllPosts(sort)
 
     if (!success) return <ErrorMessage description={message} />
 

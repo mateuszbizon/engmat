@@ -1,13 +1,11 @@
 import { client } from "../lib/client";
-import { GET_ALL_BLOGS_QUERY } from "../lib/queries";
+import { GET_ALL_BLOGS_ASC_QUERY, GET_ALL_BLOGS_QUERY } from "../lib/queries";
 
-export async function getAllPosts() {
+export async function getAllPosts(sort: "asc" | "desc" = "desc") {
     try {
         const posts = await client.withConfig({
             useCdn: false
-        }).fetch(GET_ALL_BLOGS_QUERY, {}, {
-            next: { revalidate: 60 }
-        })
+        }).fetch(sort === "desc" ? GET_ALL_BLOGS_QUERY : GET_ALL_BLOGS_ASC_QUERY)
 
         return {
             posts: posts || [],

@@ -240,6 +240,37 @@ export type GET_ALL_BLOGS_QUERYResult = Array<{
     _type: "image";
   } | null;
 }>;
+// Variable: GET_ALL_BLOGS_ASC_QUERY
+// Query: *[_type == "post"] | order(publishedAt asc) {        _id, publishedAt, title, slug, categories[]->, mainImage    }
+export type GET_ALL_BLOGS_ASC_QUERYResult = Array<{
+  _id: string;
+  publishedAt: string | null;
+  title: string | null;
+  slug: Slug | null;
+  categories: Array<{
+    _id: string;
+    _type: "category";
+    _createdAt: string;
+    _updatedAt: string;
+    _rev: string;
+    title?: string;
+    slug?: Slug;
+    description?: string;
+  }> | null;
+  mainImage: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+  } | null;
+}>;
 // Variable: GET_BLOG_BY_SLUG_QUERY
 // Query: *[_type == "post" && slug.current == $slug][0] {        _id, publishedAt, title, slug, categories[]->, mainImage, body    }
 export type GET_BLOG_BY_SLUG_QUERYResult = {
@@ -321,6 +352,7 @@ import "@sanity/client";
 declare module "@sanity/client" {
   interface SanityQueries {
     "\n    *[_type == \"post\"] | order(publishedAt desc) {\n        _id, publishedAt, title, slug, categories[]->, mainImage\n    }\n": GET_ALL_BLOGS_QUERYResult;
+    "\n    *[_type == \"post\"] | order(publishedAt asc) {\n        _id, publishedAt, title, slug, categories[]->, mainImage\n    }\n": GET_ALL_BLOGS_ASC_QUERYResult;
     "\n    *[_type == \"post\" && slug.current == $slug][0] {\n        _id, publishedAt, title, slug, categories[]->, mainImage, body\n    }  \n": GET_BLOG_BY_SLUG_QUERYResult;
     "\n    *[_type == \"post\" && count(categories[@->slug.current == $categorySlug]) > 0] | order(publishedAt desc) {\n        _id, publishedAt, title, slug, categories[]->, mainImage\n    }\n": GET_BLOGS_BY_CATEGORY_SLUG_QUERYResult;
     "\n    *[_type == \"category\" && slug.current == $slug][0]  \n": GET_CATEGORY_BY_SLUG_QUERYResult;
