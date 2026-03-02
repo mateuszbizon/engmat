@@ -17,3 +17,7 @@ export const GET_BLOGS_BY_CATEGORY_SLUG_QUERY = defineQuery(`
         _id, publishedAt, title, slug, categories[]->, mainImage
     }
 `)
+
+export const GET_CATEGORY_BY_SLUG_QUERY = defineQuery(`
+    *[_type == "category" && slug.current == $slug][0]  
+`)

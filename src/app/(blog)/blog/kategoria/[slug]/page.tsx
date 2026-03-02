@@ -1,5 +1,8 @@
 import AllCategoryBlogs from '@/components/blog/AllCategoryBlogs'
+import EmptyMessage from '@/components/messages/EmptyMessage'
+import ErrorMessage from '@/components/messages/ErrorMessage'
 import Container from '@/components/ui/container'
+import { getCategoryBySlug } from '@/sanity/category/getCategoryBySlug'
 import React from 'react'
 
 type Props = {
@@ -8,6 +11,21 @@ type Props = {
 
 async function CategoryPage({ params }: Props) {
   const { slug } = await params
+  const { category, success, message } = await getCategoryBySlug(slug)
+
+    if (!success) return (
+        <section className='h-screen py-section-padding'>
+            <ErrorMessage description={message} />
+        </section>
+    )
+
+    if (!category) {
+        return (
+            <section className='h-screen py-section-padding'>
+                <EmptyMessage title='Nie znaleziono kategorii' description="Wygląda na to że kategoria o takiej nazwie nie istnieje" />
+            </section>
+        )
+    }
 
   return (
     <>
