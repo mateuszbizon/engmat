@@ -27,9 +27,9 @@ export const NAV_ITEMS: NavItem[] = [
         href: "/najczesciej-zadawane-pytania"
     },
     {
-        label: "Galeria",
+        label: "Blog",
         isLink: true,
-        href: "/galeria"
+        href: "/blog"
     },
     {
         label: "Kontakt",
