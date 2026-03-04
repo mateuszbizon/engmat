@@ -2,12 +2,15 @@ import React from 'react'
 import Container from '../ui/container'
 import { MapPin, Phone } from 'lucide-react'
 import { PHONE_NUMBER } from '@/constants'
+import AnimatedContent from '../AnimatedContent'
 
 function MapSection() {
   return (
     <section className='pt-section-padding'>
         <Container>
-            <h2 className='heading2 heading-margin-bottom text-center'>Skontaktuj się z nami</h2>
+            <AnimatedContent>
+                <h2 className='heading2 heading-margin-bottom text-center'>Skontaktuj się z nami</h2>
+            </AnimatedContent>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10 mb-10'>
                 <div className='bg-background rounded-3xl p-10 flex flex-col items-center text-center gap-8'>
                     <MapPin className='size-10' />

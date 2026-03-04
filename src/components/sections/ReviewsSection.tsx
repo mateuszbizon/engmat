@@ -8,6 +8,7 @@ import { Button } from '../ui/button'
 import Link from 'next/link'
 import { REVIEWS_LIST } from '@/constants/reviews'
 import ReviewCard from '../cards/ReviewCard'
+import AnimatedContent from '../AnimatedContent'
 
 function ReviewsSection() {
     const plugin = React.useRef(
@@ -17,7 +18,9 @@ function ReviewsSection() {
   return (
     <section className='bg-background-light2 py-section-padding'>
         <Container>
-            <h2 className='heading2 text-center heading-margin-bottom'>Co mowią o nas rodzice i kursanci</h2>
+            <AnimatedContent>
+                <h2 className='heading2 text-center heading-margin-bottom'>Co mowią o nas rodzice i kursanci</h2>
+            </AnimatedContent>
             <Carousel
                 opts={{
                     loop: true

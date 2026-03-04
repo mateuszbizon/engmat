@@ -132,4 +132,8 @@
     .heading-margin-bottom {
         @apply mb-10 md:mb-16
     }
+
+    .why-us-card {
+        @apply p-5 rounded-2xl bg-background border-2 relative h-full
+    }
 }
