@@ -346,6 +346,37 @@ export type GET_CATEGORY_BY_SLUG_QUERYResult = {
   slug?: Slug;
   description?: string;
 } | null;
+// Variable: GET_RECENT_BLOGS_QUERY
+// Query: *[_type == "post"] | order(publishedAt desc)[0...3] {        _id, publishedAt, title, slug, categories[]->, mainImage    }
+export type GET_RECENT_BLOGS_QUERYResult = Array<{
+  _id: string;
+  publishedAt: string | null;
+  title: string | null;
+  slug: Slug | null;
+  categories: Array<{
+    _id: string;
+    _type: "category";
+    _createdAt: string;
+    _updatedAt: string;
+    _rev: string;
+    title?: string;
+    slug?: Slug;
+    description?: string;
+  }> | null;
+  mainImage: {
+    asset?: {
+      _ref: string;
+      _type: "reference";
+      _weak?: boolean;
+      [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+    };
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+  } | null;
+}>;
 
 // Query TypeMap
 import "@sanity/client";
@@ -356,5 +387,6 @@ declare module "@sanity/client" {
     "\n    *[_type == \"post\" && slug.current == $slug][0] {\n        _id, publishedAt, title, slug, categories[]->, mainImage, body\n    }  \n": GET_BLOG_BY_SLUG_QUERYResult;
     "\n    *[_type == \"post\" && count(categories[@->slug.current == $categorySlug]) > 0] | order(publishedAt desc) {\n        _id, publishedAt, title, slug, categories[]->, mainImage\n    }\n": GET_BLOGS_BY_CATEGORY_SLUG_QUERYResult;
     "\n    *[_type == \"category\" && slug.current == $slug][0]  \n": GET_CATEGORY_BY_SLUG_QUERYResult;
+    "\n    *[_type == \"post\"] | order(publishedAt desc)[0...3] {\n        _id, publishedAt, title, slug, categories[]->, mainImage\n    }\n": GET_RECENT_BLOGS_QUERYResult;
   }
 }

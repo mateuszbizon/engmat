@@ -27,3 +27,9 @@ export const GET_BLOGS_BY_CATEGORY_SLUG_QUERY = defineQuery(`
 export const GET_CATEGORY_BY_SLUG_QUERY = defineQuery(`
     *[_type == "category" && slug.current == $slug][0]  
 `)
+
+export const GET_RECENT_BLOGS_QUERY = defineQuery(`
+    *[_type == "post"] | order(publishedAt desc)[0...3] {
+        _id, publishedAt, title, slug, categories[]->, mainImage
+    }
+`)
