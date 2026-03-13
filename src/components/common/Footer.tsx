@@ -12,7 +12,7 @@ import Facebook from '../ui/icons/Facebook'
 
 function Footer() {
   return (
-    <footer className='pt-section-padding pb-7 bg-[#C3FCF2]'>
+    <footer className='pt-section-padding pb-7 bg-linear-to-br from-background-light via-background-dark to-background'>
         <Container>
             <div className='grid md:grid-cols-[repeat(auto-fit,280px)] gap-10 md:gap-20'>
                 <div className='space-y-4 text-center md:text-left'>
