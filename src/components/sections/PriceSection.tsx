@@ -12,24 +12,24 @@ function PriceSection() {
             </AnimatedContent>
             <div className='grid md:grid-cols-2 gap-x-5 gap-y-10 text-center'>
                 <FadeContent>
-                    <div className='p-10 rounded-3xl bg-border2 space-y-5 shadow-2xl'>
+                    <div className='p-10 rounded-3xl bg-border2 space-y-5 shadow-2xl h-full'>
                         <p className='bigger-text'>Grupowe</p>
                         <p className='heading3'>od 60 zł</p>
-                        <ul className='space-y-3'>
-                            <li className='little-bigger-text'>Dlaczego warto</li>
-                            <li className='little-bigger-text'>Dlaczego warto</li>
-                            <li className='little-bigger-text'>Dlaczego warto</li>
+                        <ul className='space-y-5 little-bigger-text'>
+                            <li>Dynamika i motywacja</li>
+                            <li>Wspólna perspektywa</li>
+                            <li>Ekonomiczne rozwiązanie</li>
                         </ul>
                     </div>
                 </FadeContent>
                 <FadeContent delay={0.5}>
-                    <div className='p-10 rounded-3xl bg-border2 space-y-5 shadow-2xl'>
+                    <div className='p-10 rounded-3xl bg-border2 space-y-5 shadow-2xl h-full'>
                         <p className='bigger-text'>Indywidualne</p>
                         <p className='heading3'>od 100 zł</p>
-                        <ul className='space-y-3'>
-                            <li className='little-bigger-text'>Dlaczego warto</li>
-                            <li className='little-bigger-text'>Dlaczego warto</li>
-                            <li className='little-bigger-text'>Dlaczego warto</li>
+                        <ul className='space-y-5 little-bigger-text'>
+                            <li>Pełna uwaga nauczyciela</li>
+                            <li>Tempo dopasowane do Ciebie</li>
+                            <li>Personalizacja materiałów</li>
                         </ul>
                     </div>
                 </FadeContent>
