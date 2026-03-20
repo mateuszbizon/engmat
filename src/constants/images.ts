@@ -24,3 +24,8 @@ export const ENGMAT_OWNER: Image = {
     src: "/engmat_owner.jpg",
     alt: "Właścicielka firmy EngMat - Pani Magda. Obok po prawej stronie napis poznajmy się"
 }
+
+export const LOGO_ORLY: Image = {
+    src: "/logo_orly.png",
+    alt: "Logo firmy Orły Edukacji. Laureat konkursu 2026"
+}

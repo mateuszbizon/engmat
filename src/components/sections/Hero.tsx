@@ -3,7 +3,7 @@ import Container from '../ui/container'
 import Link from 'next/link'
 import { Button } from '../ui/button'
 import Image from 'next/image'
-import { ECJIP, OFFICE_BG } from '@/constants/images'
+import { ECJIP, OFFICE_BG, LOGO_ORLY } from '@/constants/images'
 import Shadow from '../ui/shadow'
 import AnimatedContent from '../AnimatedContent'
 
@@ -35,12 +35,15 @@ function Hero() {
                         </Button>
                     </div>
                 </AnimatedContent>
-                <div className='flex flex-col lg:flex-row items-center lg:items-start gap-5'>
-                    <em className='bigger-text'>
+                <div className='flex flex-col lg:flex-row items-center lg:items-start gap-8'>
+                    {/* <em className='bigger-text'>
                         Posiadamy certyfikat jakości ISO 9001:2015
-                    </em>
+                    </em> */}
                     <figure className='relative size-30'>
                         <Image src={ECJIP.src} alt={ECJIP.alt} fill />
+                    </figure>
+                    <figure className='relative size-30'>
+                        <Image src={LOGO_ORLY.src} alt={LOGO_ORLY.alt} fill />
                     </figure>
                 </div>
             </div>
