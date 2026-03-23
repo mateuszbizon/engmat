@@ -3,7 +3,7 @@ import { Offer } from "@/types";
 export const OFFERS: Offer[] = [
     {
         title: "Matematyka",
-        link: "/oferta/matematyka",
+        link: "/oferta/korepetycje-z-matematyki",
         list: ["Zajęcia indywidualne", "Zajęcia grupowe", "Przygotowanie do egzaminów"]
     },
     {
