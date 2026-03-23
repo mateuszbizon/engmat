@@ -35,7 +35,7 @@ function Hero() {
                         </Button>
                     </div>
                 </AnimatedContent>
-                <div className='flex flex-col lg:flex-row items-center lg:items-start gap-8'>
+                <div className='flex flex-col lg:flex-row items-center gap-8'>
                     {/* <em className='bigger-text'>
                         Posiadamy certyfikat jakości ISO 9001:2015
                     </em> */}
@@ -45,6 +45,12 @@ function Hero() {
                     <figure className='relative size-30'>
                         <Image src={LOGO_ORLY.src} alt={LOGO_ORLY.alt} fill />
                     </figure>
+                    <figure className='relative w-75 h-18.75'>
+                        <a href="https://www.orlyedukacji.pl/profile-462351-centrum-edukacyjne-engmat" target='_blank'>
+                            <Image src="https://www.orlyedukacji.pl/images/medals/462351/laureat300_gold_2_pl.png" alt="Centrum Edukacyjne EngMat - Zgorzelec" title="Centrum Edukacyjne EngMat - Zgorzelec" fill />
+                        </a>
+                    </figure>
+                    {/* <a href="https://www.orlyedukacji.pl/profile-462351-centrum-edukacyjne-engmat" target="_blank"><img src="https://www.orlyedukacji.pl/images/medals/462351/laureat300_gold_2_pl.png" style="width:300px; height:75px; border:0;" alt="Centrum Edukacyjne EngMat - Zgorzelec" title="Centrum Edukacyjne EngMat - Zgorzelec" /></a> */}
                 </div>
             </div>
         </Container>
